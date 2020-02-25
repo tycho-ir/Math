@@ -1,0 +1,303 @@
+input[type="email"]:focus{
+    outline: 2px solid #fee;
+    box-shadow: 0 0 20px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+/*input[type="email"], select{*/
+
+/*}*/
+
+/*input[type="email"]:hover{*/
+
+/*}*/
+
+.Neon{
+    /*   width:70%; */
+    outline: 2px solid #fee;
+    border-style:none;
+    position: absolute;
+    width: 400px/*59%;*/;
+    margin: -100px 0 0 -200px;
+    top: 70%;
+    left: 50%;
+}
+
+input[type="email"]{
+    padding: 20px 10px;
+    line-height: 0;
+    box-shadow: 0 40px 100px, 0 -10px 50px , 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+input{
+    background: rgba(255,255,255,0);
+    position: relative;
+    outline: solid;
+    top: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+    font-size:20px;
+    /*color:#27b8a9;*/
+}
+
+/*.bg {*/
+/*    display: block;*/
+/*    background-size: cover;*/
+/*    height: 768px;*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*}*/
+
+/*body{*/
+/*    background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*@media only screen and (max-width: 690px) {*/
+/*  input{*/
+/*    height:10px;*/
+/*    !*width:200px;*!*/
+/*  }*/
+/*  .Neon{*/
+/*      position: relative;*/
+/*      width: 200px;*/
+/*      !*margin: -100px 0 0 -200px;*!*/
+/*      top: 50%;*/
+/*      left: 50%;*/
+/*      font-size: 20px;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+/* * {
+  outline: none;
+} */
+
+/*body{*/
+/*    background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+.Send_Email {
+    background: rgba(255,255,255,0);
+    position: absolute;
+    /*padding: 10px;*/
+    /*display: block;*/
+    border-radius: 3px;
+    /*margin: 13% auto;*/
+    width: 20%;/*150px;*/
+    height:100px;
+    /*left: 43%;*/
+    /*top: 10%;*/
+    box-shadow: 0 40px 100px, 0 -10px 50px , 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+    border: 2px solid #d91140;
+    animation: blink linear infinite 3s;
+    outline: none;
+    bottom: 100px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.Send_Email:hover .Send_Email_Icon {
+    /*z-index:-3px;*/
+    top:10%;
+    transform: rotate(10deg);
+    -webkit-transition: -webkit-transform 0.15s;
+    -moz-transition: -moz-transform 0.15s;
+    -o-transition: -o-transform 0.15s;
+    /*-ms-transition: -ms-transform 0.15s;*/
+    transition: transform 0.15s;
+    position: relative;
+}
+
+.Send_Email.clicked {
+    /*   background-color: #cff5b3; */
+    border: 2px solid #cff5b3;
+    color: #ff0000;
+}
+
+.Send_Email.clicked .Send_Email_Icon {
+    -webkit-animation: flyaway 1.3s linear;
+    -moz-animation: flyaway 1.3s linear;
+    -o-animation: flyaway 1.3s linear;
+    -ms-animation: flyaway 1.3s linear;
+    animation: flyaway 1.3s linear;
+    top: 25%;
+    right: 40%;
+}
+
+.Send_Email_Icon{
+    fill:#d91140;
+    height:40px;
+}
+
+@keyframes flyaway {
+    0% {
+        transform: translateY(0)
+        rotate(145deg);
+    }
+    100% {
+        transform: translateY(50vh)
+        rotate(145deg);
+    }
+}
+@keyframes blink {
+    80% {
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .Send_Email {
+        height:75px;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (max-width:605px){
+    input[type="email"]{
+        padding: 15px 10px;
+    }
+    .Send_Email {
+        top: 70%;
+    }
+    .Neon{
+        width: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+
+@media only screen and (max-width:574px){
+
+    .Send_Email {
+        top: 70%;
+    }
+    .Neon{
+        width: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .Send_Email {
+        width:15% ;
+    }
+    .Send_Email_Icon{
+        height:35px;
+    }
+}
+
+@media only screen and (max-width:500px){
+
+    input[type="email"]{
+        font-size: 1em;
+    }
+    .Neon{
+        top: 65%;
+    }
+    .Send_Email{
+        top: 63%;
+        height: 65px;
+    }
+}
+
+@media only screen and (max-width:407px){
+
+    input[type="email"]{
+        font-size: 0.9em;
+    }
+    .Neon{
+        width: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .Send_Email {
+        height:60px;
+    }
+    .Send_Email_Icon{
+        height:30px;
+    }
+}
+
+@media only screen and (max-width:370px){
+
+    input[type="email"]{
+        font-size: 0.8em;
+    }
+    .Neon{
+        width: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .Send_Email {
+        height:55px;
+    }
+    .Send_Email_Icon{
+        height:25px;
+    }
+}
+@media only screen and (max-width:360px){
+
+    input[type="email"]{
+        font-size: 3.5vw;
+    }
+    .Neon{
+        width: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .Send_Email {
+        height:40px;
+        top:63%
+    }
+    .Send_Email_Icon{
+        height:19px;
+    }
+}
